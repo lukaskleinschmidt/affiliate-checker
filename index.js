@@ -10,7 +10,7 @@ const {
     headless = true,
 } = JSON.parse(fs.readFileSync('./config.json', 'utf8'));
 
-async function followLink(link, follow, page) {
+async function followLink(link, follow = false, page) {
     let temp;
 
     switch (follow) {
